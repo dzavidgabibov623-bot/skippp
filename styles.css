@@ -58,6 +58,14 @@ summary:focus-visible {
   outline-offset: 3px;
 }
 
+#top,
+#about,
+#cases,
+#pricing,
+#contact {
+  scroll-margin-top: calc(var(--header-h) + 1px);
+}
+
 .topbar {
   position: sticky;
   top: 0;
@@ -935,6 +943,14 @@ summary:focus-visible {
 }
 
 @media (max-width: 620px) {
+  #top,
+  #about,
+  #cases,
+  #pricing,
+  #contact {
+    scroll-margin-top: 0;
+  }
+
   body {
     font-size: 15px;
   }
